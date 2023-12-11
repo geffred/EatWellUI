@@ -1,0 +1,368 @@
+/* la section 1 pour la partie profil*/
+main .section_01{
+
+    padding: 50px 40px 10px 40px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;                                           
+    font-size: 1.2em;
+    box-shadow: 5px 0px 5px -5px rgba(128, 128, 128, 0.552) ;
+    /*border: 1px solid black;*/
+   
+}
+
+/* ajustement de la taille du logo et espacement avec les autre elements du profil*/
+main .section_01 .logo img{
+
+    max-width: 200px;
+    margin-bottom: 40px;
+
+}
+
+/* suppression du style de base de la liste ul*/
+main .section_01 ul {
+    list-style: none;
+    padding: 0px;
+}
+
+/* espacement des elements du profil*/
+main .section_01 ul li{
+    
+    margin-top: 30px;
+}
+
+
+/*redimentionnement des icons du profil*/
+main .section_01 ul li img{
+
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+main .section_01 ul li:hover{
+
+    cursor: pointer;
+}
+
+/*création du boutton de déconnexion*/
+main .section_01 .connexion{
+    display: inline-block;
+    width: 90%;
+    padding: 8px;
+    border-radius:8px;
+    margin-top: 60px;
+    text-decoration: none;
+    border: 2px solid #FF6868;
+    color:  #FF6868;
+    font-weight: bold;
+    box-shadow: 0px 0px 2px #ff68689b;
+
+}
+
+/*ajustement de la taille de l'icon de déconnexion*/
+main .section_01 .connexion img{
+
+    margin: 0px 10px;
+    width:35px;
+    height: 35px;
+
+}
+
+
+
+main .section_02 {
+
+    position: relative;
+   
+    /*border: 1px solid black;*/
+}
+
+/* je definir les style de la barre d'utilisateur en haut de l'application*/
+main .section_02 .user{
+
+    margin: 10px 20px;
+    box-shadow: 0px 0px 5px -1px rgba(128, 128, 128, 0.498);
+    border-radius: 30px;
+    padding: 12px;
+    font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
+    color: #009245;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+
+/*je definis le style de l'icon email */
+
+main .section_02 .user .mail{
+
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 65%;
+    padding: 25px 10px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.205);
+    z-index: 20;
+    visibility: hidden;
+}
+
+main .section_02 .user .mail a{
+
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main .section_02 .user  img:hover{
+
+    cursor: pointer;
+}
+
+main .section_02 .user .mail a:hover{
+
+    background-color: rgba(192, 192, 192, 0.122);
+}
+
+main .section_02 .user .boite_reception:hover .mail{
+
+    visibility: visible;
+}
+
+main .section_02 .user .mail:hover{
+    
+    visibility: visible;
+}
+
+
+main .section_02 .user .mail div{
+    text-align: justify;
+    font-size: 1em;
+    margin: 5px 0px;
+}
+
+main .section_02 .user .mail div div a{
+
+    text-decoration:none ;
+    color: black;
+}
+
+main .section_02 .menu{
+    visibility: hidden;
+    margin: 10px 20px;
+    box-shadow: 0px 0px 5px -1px rgba(128, 128, 128, 0.498);
+    border-radius: 30px;
+    font-weight: bold;
+    background: white;
+}
+
+
+main .section_02 .user img{
+
+    margin-right: 15px;
+}
+
+main .section_02 .food_single{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -5;
+    width: 100%;
+}
+
+main .section_02 .food{
+   
+    background-image: url("/src/img/food.png");
+    height: 22em;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+main .section_02 .article_01 h4{
+
+    font-size: 1.2em;
+}
+
+main .section_02 .hey{
+    font-size: 3em;
+    font-weight: bold;
+    color: #009245;
+   
+}
+
+main .section_02 .article_01 p{
+
+   text-align: justify;
+
+}
+
+main .section_02 .article_01{
+
+    display: inline-block;
+    box-sizing: border-box;
+    background: #DDFFBC;
+    padding: 30px 40px;
+    margin: 10 10 0px  10px;
+     
+}
+
+main .section_02 .article_01 a{
+
+    display: inline-block;
+    width: 100%;
+    background: #009245;
+    padding: 10px;
+    color: white;
+    text-decoration: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+main .section_02 .recharge .section_01{
+
+    background-color: #DDFFBC;
+    font-family: 'Fredoka', sans-serif;
+}
+
+main .section_02 .recharge .section_01 h4{
+
+    color:#009245;
+    margin-bottom: 30px;
+}
+
+main .section_02 .recharge .section_01 a{
+
+    color: white;
+    display: inline-block;
+    background: #009245;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+}
+
+main .section_02 .recharge .section_01 h4{
+
+    font-weight: bold;
+    font-size: 1em;
+   
+}
+
+main .section_02 .recharge .section_01 div{
+
+    background: white;
+    padding: 1px 20px;
+    width: 100%;
+    border-radius:30px;
+    margin-bottom: 10em;
+
+}
+
+main .section_02 .recharge .section_01 p{
+
+    font-size: .8em;
+    opacity: .8;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+main .section_02 .recharge .section_02{
+
+    display: flex;
+    justify-content: start;
+    background-image: url('../img/dating.png');
+    background-size: cover;
+    height: 30em;
+}
+
+/*création du style du footer*/
+
+/*je definis une couleur de fond*/
+footer{
+
+    background: #FFF4EB;
+}
+
+/*je supprime le style de base de la liste ul , puis je le customise*/
+footer .ul{
+
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .ul span{
+
+    display: inline-block;
+}
+
+footer  h4{
+
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 30px; 
+    
+}
+
+footer .social h4{
+
+    text-align: center;
+}
+
+footer .social img{
+
+    margin-left: 0px;
+}
+
+footer .paiement div img{
+
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+
+
+/*j'adapte certaine proprité au format mobile*/
+
+@media only screen and (max-width:750px) {
+    
+   footer> div>div{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+       
+    } 
+    main .section_02 .recharge .section_02{
+
+        height: 35em;
+    }
+    main .section_01{
+
+        display: none;
+       
+    }
+    main .section_02 .recharge .section_01{
+
+       display: block;
+    }
+
+    main .section_02 .user{
+        display: none;
+    }
+    
+    main .section_02 .menu{
+    
+       visibility: visible;
+       margin-bottom: 100px;
+    }
+
+
+   
+}

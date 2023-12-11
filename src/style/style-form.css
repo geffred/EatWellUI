@@ -1,0 +1,194 @@
+
+/* style du formulaire*/
+
+/*je definir la couleur de fond et les style des caractères*/
+form{
+
+    background: #DDFFBC;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    color: #009245;
+}
+
+/*je cache le champs de type file pour le customiser (remplacer le style par defaut)*/
+input[type="file"]{
+
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+/* pour son nouveau style je definis le mot "importer" puis je definis les style*/
+label[for="file"]{
+
+    width: 15em;
+    padding: 4px;
+    background: #009245;
+    color: white;
+    text-align: center;
+}
+
+/* pour tous les champs de type input , je mets une large de 90% par rapport à ceux de leur parents*/
+form input{
+
+    width: 90%;
+    height: 1.4em;
+    border: 0px solid transparent;
+}
+
+/*j'espace les différentes div qui contienent les champs input , vers le bas*/
+form div > div{
+
+    margin-bottom: 15px;
+    
+}
+
+/*je centre les elements enfants de la div , qui contient les données de l'école*/
+form .ecole{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*je definis les style du champs select pour selectionner mon ecole*/
+
+form .ecole .mon_ecole{
+
+    background: white;
+    padding: 2px 20px;
+    border-radius: 5px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    align-items: center;
+   
+   
+}
+
+/* je definis le style des caractères qui des options du champs select*/
+form .ecole .mon_ecole select{
+
+   font-weight: bold;
+   border: none;
+   color: #009245;
+
+}
+
+form .ecole_liste{
+
+    background: white;
+    width: 60%;
+    font-size: .8em;
+    padding: 20px;
+    color: black;
+    margin-bottom: 40px;
+}
+
+/* j'aligne les boutons annuler et enregistrer*/
+form .form-btns{
+
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+/*je definis la forme des champs input*/
+form .form-btns input{
+
+    margin:0px 30px;
+    width: 7em;
+    height: 2em;
+    color: white;
+
+}
+
+/*création du bouton switch pour savoir si un user est etudiant ou pas*/
+form .switch-btn{
+
+    width: 150px;
+    border-radius:100px;
+    background: white;
+    height: 40px;
+    position: relative;
+   
+}
+
+/*j'utilise le pseudo format after pour definir un element à l'interieur du btn puis je lui mets le texte Oui*/
+form .switch-btn::after{
+
+    position:absolute ;
+    right: 0px;
+    top: 0px;
+    transition: all .4s ease;
+    width: 50%;
+    border-radius: 100px;
+    content: "Oui";
+    text-align: center;
+    background: #009245;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+}
+
+/*je crée l'effet du switch*/
+
+.statut  input:checked + .switch-btn::after {
+
+    transform: translateX(-100%);
+    content: "Non";
+}
+
+.statut{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.statut  input  {
+
+    visibility: hidden;
+}
+
+/*j'adapter certaine propriété au format mobile*/
+
+@media only screen and (max-width:750px) {
+    
+    main .section_01{
+         display: none;
+        
+     } 
+     
+    form .form-btns{
+
+    margin-top: 20px;
+    
+    }
+
+    form .form-btns input{
+
+        margin:0px 15px;
+       
+    }
+    form .ecole .mon_ecole{
+        width: 80%;
+    }
+    form .ecole_liste{
+        width: 80%;
+    }
+    form .switch-btn{
+
+        margin-bottom: 20px;
+    }
+ }
+ 
+
+
+
+
